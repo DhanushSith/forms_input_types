@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML - FORM</title>
+<link rel="stylesheet" href="./css/style.css">
+
+<style>
+	table,tr{
+		border:1px solid black;
+		border-collapse:collapse;
+	}
+	td,th{
+		border:1px solid black;
+		padding:10px 20px;
+	}
+
+</style>
+
+</head>
+<body>
+
+
+<fieldset>
+
+<h1>button</h1>
+<form action="/action_page.php">
+<input type="button" value="button">
+</form>
+
+<h1>checkbox</h1>
+<input type="checkbox" value="bike">
+<label for="bike">Bike</label><br>
+<input type="checkbox" value="car">
+<label for="car">Car</label><br>
+<input type="checkbox" value="boat">
+<label for="boat">Boat</label><br>
+
+<h1>color</h1>
+<label for="favcolor">red</label>
+<input type="color" value="#ff0000" id="favcolor"><br><br>
+<label for="favcolor">black</label>
+<input type="color" value="#000" id="favcolor"><br>
+
+<h1>date</h1>
+<label for="birthday">Choose Your Date of Birth :</label>
+<input type="date" name="birthday" id="birthday"><br>
+
+<h1>datetime-local</h1>
+<label for="birthday">Choose Your Date of Birth :</label>
+<input type="datetime-local" name="birthday" id="birthday"><br>
+
+<h1>email</h1>
+<form action="/action_page.php">
+<label for="mail">Enter your E-mail :</label>
+<input type="email" name="birthday" id="mail" target="_self"><br>
+</form>
+
+<h1>file</h1>
+<label for="files">Choose File :</label>
+<input type="file" name="myfile" id="files"><br>
+
+<h1>hidden</h1>
+  <form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+</form>
+
+<h1>image</h1>
+<form action="/action_page.php">
+  <label for="fname">First name: </label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name: </label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="image" src="./img/img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+<h1>month</h1>
+<form action="/action_page.php">
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="submit" value="Submit">
+</form>
+
+<h1>number</h1>
+<form action="/action_page.php">
+  <label for="quantity">Quantity (between 1 and 100):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="100">
+  <input type="submit" value="Submit">
+</form>
+
+<h1>password</h1>
+   <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+
+<h1>radio</h1>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">Yes</label>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">No</label><br><br>
+
+
+<h1>reset</h1>
+<form action="/action_page.php">
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" value="Dhanuh"><br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" value="Sithananthan"><br><br>
+<input type="submit">
+<input type="reset" value="reset" target="_self">
+</form>
+
+<h1>range</h1>
+<form action="/action_page.php" method="get">
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit" value="Submit">
+</form>
+
+<h1>search</h1>
+<form action="/action_page.php">
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="submit" value="Submit">
+</form>
+
+<h1>submit</h1>
+<input type="submit" value="Submit">
+
+<h1>text</h1>
+<form action="/action_page.php">
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" value="Dhanuh"><br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" value="Sithananthan"><br><br>
+<input type="submit" target="_self">
+</form>
+
+<h1>tel</h1>
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="1234-567-890" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
+  <small>Format: 123-45-678</small><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>time</h1>
+<label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt"><br><br>
+
+<h1>url</h1>
+<form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form>
+
+<h1>week</h1>
+<form action="/action_page.php">
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week"><br><br>
+</form>
+
+<table>
+
+	<caption>Example table</caption>
+	<thead>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</thead>
+	<tbody>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tfoot>
+
+
+
+</table>
+
+
+
+</fieldset>
+
+
+</body>
+</html>
